@@ -1,0 +1,153 @@
+@import './base';
+
+.brand{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap:4rem;
+    padding: 0 3rem;
+    align-items:center;
+    width: 100%;
+    height: 60vh;
+    
+&__title{
+    width: 100%;
+    line-height:1.4;
+
+    &_h1{
+     font-size: 2.3vw;
+     color:$color-secondary;
+    }
+   &_p{
+    font-size: 1.4vw;
+    color: $color-grey-light;
+    font-weight: 400;
+   }
+}
+&__trustUser{
+    width: 100%;
+    margin: 3rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+
+    &_h4{
+        font-size:1.4vw;
+        
+    }
+    
+    &_p1{
+        font-size: 1.5rem;
+        margin-right: 2rem;
+        font-weight: 500;
+        
+    }
+}
+&__image{
+    width: 50vw;
+    height: 55vh;
+    border-radius: 5rem;
+    box-shadow: .1rem .3rem 1.5rem #444;
+
+}
+}
+@media (max-width: 970px){
+    .brand{
+        padding: 0 ;
+        grid-gap: 2rem;
+        h1{
+            font-size: 3.2vw ;
+            color:$color-secondary;
+           }
+
+        p{
+            font-size: 1.8rem ;
+           }
+        &__image{
+            width: 50vw;
+            height: 45vh;
+        }
+    }
+
+}
+@media (max-width: 800px){
+    .brand{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:space-between;
+    height: 150vh;
+    width:100%;
+    grid-gap:2rem;
+    padding: 0 2rem;
+    margin-top: 5rem;
+    &__title{
+        width: 100%;
+        &_h1{
+            text-align: center;
+            font-size: 2vw;
+            text-align: center;
+           }
+          &_p{
+            text-align: center;
+           font-size: 1.4vw ;
+          }
+        
+        :first-child,:nth-child(3){
+            display: flex;
+            flex-direction: column;
+        }
+    }
+    &__image{
+        width: 65vw;
+        height: 50vh;
+    }
+    &__trustUser{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row !important; 
+        div,span{
+            display: flex;
+            align-items: center;   
+        }
+        &_p1{
+            font-size: 2.4vw !important;
+        }
+        &_h4{
+            font-size: 2vw !important;
+        }
+    }
+}
+}
+@media (max-width: 600px){
+    .brand{    
+    &__title{
+
+    h1{
+     font-size: 4.5vw !important;
+    
+    }
+   p{
+    font-size: 3.4vw;
+  
+   }
+}
+&__trustUser{
+    &_p1{
+        font-size: 2.7vw !important;
+    }
+    &_h4{
+        font-size: 2.9vw !important;
+    }
+}
+}
+}
+@media (max-width: 450px){
+    .brand{
+        &__image{
+            width: 75vw;
+            height: 40vh;
+        }
+    }
+}

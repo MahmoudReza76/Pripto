@@ -1,0 +1,309 @@
+@import '../styles/base';
+.hero{    
+    width: 100%;
+    height: 67vh;
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 1fr;
+    margin: 0 auto;
+    position: relative;
+    
+
+    &__text{
+        width: 100%;
+        margin: 3rem 1rem;
+        padding: 4rem 2rem;
+        gap: 3rem;
+
+        h1{
+            font-size: 3.5vw;
+            line-height: 1.2;
+            color: #127370;
+            background-image: -webkit-linear-gradient(45deg, #127370 37%, #000000 100%);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+          
+          
+        }
+    }
+
+    &__form{
+        padding: 4rem 2rem;
+        display: flex;
+        flex-direction: row;
+        justify-content:start;
+        align-items: center;
+        gap: .4rem;
+
+        input{
+            padding: 1.2rem 1.5rem;       
+            width: 60%;
+            height: 4rem;
+            border-radius: 1rem;
+            border: none;
+            color:$color_main;
+            font-weight: 500;
+            outline-color: aquamarine;
+            background: rgb(0,255,255);
+            background: linear-gradient(274deg, rgba(0,255,255,0.6895133053221288) 58%, rgba(0,228,255,0.6110819327731092) 78%, rgba(2,213,249,0.10127801120448177) 100%);
+            font-size: 1.1vw;
+        }  
+        button{   
+            width: 25%;
+            height: 4rem;
+            border-radius: 1.5rem;
+            padding: 0.2rem 0.4rem;
+            background-color: $color-primary-dark;
+            cursor: pointer;
+            border:1px solid aqua;
+            transition: all 1s;
+            p{
+                font-size: 1.2vw;
+                font-weight: 500;
+                color: $color-gray-brigh;
+             }
+        &:hover{
+            background-color: $color-main;
+            position: relative;
+        }
+      
+        }   
+    }
+
+    &__img{
+            width: 100%;
+
+        img{
+            width: 100%;
+            height: 60vh;
+            border-radius: 5rem;
+        }
+    }
+}
+
+
+@media (max-width: 970px) {
+    .hero{    
+        &__text{
+            width: 100%;
+            margin: 3rem 1rem;
+            padding: 4rem 2rem;
+    
+            h1{
+                line-height: 1.4;
+                font-size: 4vw;
+                 
+            }
+        }
+        &__form{
+            padding: 5rem 1rem;
+          
+            gap: .4rem;
+    
+            input{
+                padding: 1.2rem 1.5rem;       
+                width: 30vw;
+                height: 4rem;
+                border-radius: 1rem;
+                border: none;
+                color:$color_main;
+                font-weight: 500;
+                outline-color: aquamarine;
+                background: rgb(0,255,255);
+                background: linear-gradient(274deg, rgba(0,255,255,0.6895133053221288) 58%, rgba(0,228,255,0.6110819327731092) 78%, rgba(2,213,249,0.10127801120448177) 100%);
+                font-size: 1.3rem;
+            }  
+            button{   
+                width: 25%;
+                height: 4rem;
+                border-radius: 1.5rem;
+                padding: 0.2rem 0.4rem;
+                background-color: $color-primary-dark;
+                cursor: pointer;
+                border:1px solid aqua;
+                transition: all 1s;
+                p{
+                   
+                    font-weight: 500;
+                    color: $color-gray-brigh;
+                 }
+            &:hover{
+                background-color: $color-main;
+                position: relative;
+            }
+          
+            }   
+        }
+    
+        &__img{
+                width: 100%;
+    
+            img{
+                width: 100%;
+                height: 50rem;
+                border-radius: 5rem;
+            }
+        }
+    
+    }
+        
+}
+
+@media (max-width: 870px){
+
+    .hero{    
+        &__text{
+            width: 100%;
+            margin: 3rem 1rem;
+            padding: 3rem 2rem;
+    
+            h1{
+                line-height: 1.5;
+                font-size: 3.9vw;
+                 
+            }
+        }
+   
+        input{
+            padding: 1.2rem 1.5rem;       
+            width: 35vw;
+            font-size: 1.3rem;
+        }  
+        button{   
+            width: 30%;
+            height: 4rem;
+     
+        
+            p{
+                font-size: 1.5vw;
+             }}
+ }
+}
+@media (max-width: 650px){
+    .hero{
+        
+       width: 100%;
+       height: 55vh;
+       display: grid;
+       align-items: center;
+       grid-template-columns: 1fr;
+       margin: 0 auto;
+       position: relative;
+
+       &::before {
+        content: "";
+        position: fixed;
+        left: 0;
+        right: 0;
+        z-index: -1;
+        display: block;
+        width: 100%;
+        height: 100%;
+        background-image: url(../asset/bitcoindown03_generated.png);
+       background-size:100% 60vh;
+       background-repeat: no-repeat;
+       background-attachment: scroll;
+       filter: blur(.4rem);
+       }  
+
+        &__img{
+            display: none;
+        }
+
+        &__text{
+            width: 100%;
+            padding: 3rem 2rem;
+            
+            h1{
+                font-size: 4vw;
+                text-align: center;
+            }
+        }
+        &__form{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+            input{
+                width: 60vw;
+                font-size: 2.5vw;
+            }
+            button{
+                width: 20vw;
+
+                p{
+                    font-size: 2.5vw;
+                }
+            }
+            
+        }
+    }
+}
+@media (max-width: 560px){
+    .hero{
+        &__text{
+          
+            h1{
+                font-size: 6vw;
+                line-height: 1.5;
+            }
+    }
+    &__form{
+        input{
+            width: 50vw;
+            font-size: 2.5vw;
+        }
+        button{
+            width: 20vw;
+            p{
+                font-size: 1.4rem;
+            }
+        }
+        
+    }
+}
+}
+@media (max-width: 470px){
+    .hero{
+        &__text{
+          
+            h1{
+                font-size: 7vw;
+                line-height: 1.5;
+            }
+    }
+    &__form{
+        padding: 4rem 0rem;
+        input{
+            width: 60vw;
+            font-size: 2.8vw;
+        }
+        button{
+            width: 20vw;
+            p{
+                font-size: 2.8vw;
+            }
+        }
+        
+    }
+}
+}
+@media (max-width: 375px){
+    .hero{
+        &__form{
+            input{
+                width: 55vw;
+                font-size: 3vw;
+                height: 4vh;
+            }
+            button{
+                width: 20vw;
+                height: 4vh;
+                p{
+                    font-size: 2.8vw;
+                }
+            }  
+        }
+    }
+}

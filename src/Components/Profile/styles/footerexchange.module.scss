@@ -1,0 +1,46 @@
+@import '../../../styles/base';
+.container{
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    background:#1F2A40;
+    img{
+        width: 20rem;
+        margin: 4rem 1rem;
+    }
+    h1{
+      font-size: 2rem;
+      color: $color-root;
+      padding: 2rem 1rem;
+    }
+    &__footer{
+      padding: 2rem 2rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        text-decoration: none;
+    }
+  li{
+    list-style: none;
+    padding: 1rem 1rem;
+  
+    a{
+        text-decoration: none;
+        color: aliceblue;
+        font-size: 1.5rem;
+        font-weight: 400;
+     
+
+    }
+  }
+  &__copyright{
+    border-top: .5px solid $color-grey-dark;
+    padding: 2rem;
+  p{
+    font-size: 1.2rem;
+    color:$color-gray-brigh;
+  }
+  }
+
+}

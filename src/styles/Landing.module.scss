@@ -1,0 +1,95 @@
+@import '../styles/base';
+
+
+.container{
+    width:100%;
+    height:20vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem ;
+    margin:0 .2rem;
+    border: .1rem solid #999;
+    border-radius: 3rem;
+    background: rgb(0,255,255);
+    background: linear-gradient(274deg, rgba(0,255,255,0.4682247899159664) 21%, rgba(0,228,255,0.4150035014005602) 50%, rgba(2,213,249,0.1881127450980392) 87%);
+    column-gap: 2rem;
+    
+
+
+&__link{
+   
+    text-decoration:none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+&__img{
+    padding:1rem 0;
+    width:20%;   
+    border-radius: 5rem;
+}
+
+&__symbol{
+    display: inline-block;
+    margin: 1rem auto;
+    font-size: 2rem;
+    font-weight: 400;
+    color: $color-grey-dark;
+
+
+}
+&__price{
+    font-size:1.8rem;
+    color: $color-grey-dark ;
+    font-weight:300
+}
+&__changeprice{
+    font-size: 1.5rem;
+    margin:1rem 0;
+}
+  
+}
+@media (max-width: 530px){
+    .container{
+       
+        &__symbol{
+            display: inline-block;
+            margin: 1rem auto;
+            font-size: 3.6vw;
+            font-weight: 400;
+        }
+        &__price{
+            font-size:3.2vw;
+            color: $color-grey-dark ;
+            font-weight:400
+        }
+        &__changeprice{
+            font-size: 2.9vw;
+            margin:1rem 0;
+        }
+    }
+}
+@media (max-width: 400px){
+    .container{
+       
+        
+        &__symbol{
+            display: inline-block;
+            margin: 1rem auto;
+            font-size: 4.3vw;
+            font-weight: 500;
+        }
+        &__price{
+            font-size:4vw;
+            color: $color-grey-dark ;
+            font-weight:400
+        }
+        &__changeprice{
+            font-size: 3.8vw;
+            margin:1rem 0;
+        }
+    }
+}

@@ -1,0 +1,106 @@
+@import '../../../styles/base';
+.margin{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 30vh;
+    padding:0 3rem;
+    border-radius:2rem;
+    margin-bottom: 4rem;
+
+    &__asset{
+        display: flex;
+        align-items: center;
+        height: 30vh;
+        width: 100%;
+        &_info{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+        }
+         h1{
+            font-size: 4rem;
+            font-weight: 400;
+         }
+         span{
+            font-size: 2rem;
+            font-weight: 500;
+         }
+    }
+
+        &__icons{
+        display: flex;
+        align-items: center;
+        justify-content: end;
+        width: 100%;
+        height: 100%;
+        flex-direction: row;
+        gap: 5rem;
+
+        &__box{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+        a{
+            font-size: 1.5rem;
+            font-weight: 500;
+
+        }
+    }
+    &__tabs{
+        width: 100%;
+        height: 40vh;
+    }
+    
+
+    &__table{
+        width: 100%;
+        padding: 2rem;
+        border-radius: 2rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        background-color:  $color-primary-cean;
+        
+        border: 4px solid $color-root;
+        table{
+            width: 100%;
+            tr{
+                font-size: 2rem;
+                text-align: center;
+                height: 7vh;
+            }
+        
+            th{
+                text-align:center ;
+                vertical-align: text-top;
+                height:5rem;
+                border-bottom: 2px solid $color-root;
+            }
+          
+            
+        }
+    }
+    &__input{
+        width: 26rem;
+        height: 4rem;
+        border: none;
+        font-size: 1.5rem;
+        color: $color-grey-light;
+        padding: 1rem;
+        margin-bottom: 2rem;
+        border: none;
+        border-radius: 2rem;
+
+        &:focus{
+        outline:2px solid $color_root
+        }
+        
+}
+}

@@ -1,0 +1,55 @@
+@import '../styles/base';
+.container{
+    width: 100%;
+    height: 60vh;
+    padding: 4rem 3rem;
+    margin:2rem 1rem;
+
+  &__h1{
+    padding: 3rem 2rem;
+    margin-bottom: 2rem;
+    font-size: 2.5vw;
+    font-weight: 700;
+    color: $color-main;
+  }
+  &__cards{
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: row;
+        align-items: center;
+    }
+}
+
+@media (max-width: 970px){
+.container{
+
+  h1{
+    font-size: 3vw;
+  }
+}
+}
+@media (max-width: 800px){
+  .container{
+    height: 130vh;
+    width: 100%;
+    overflow-x: hidden;
+    &__cards{
+      display: flex;
+      justify-content: space-evenly;
+      flex-direction: column;
+      align-items: center;
+  }
+    h1{
+      font-size: 4vw;
+    }
+  }
+  }
+  @media (max-width: 600px){
+    .container{
+      
+  
+      h1{
+        font-size: 5vw;
+      }
+    }
+  }

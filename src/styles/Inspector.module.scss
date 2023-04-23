@@ -1,0 +1,80 @@
+@import '../styles/base';
+.container{
+    width: 100vw;
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    background-image:url(../../src/asset/836-8365729_graph-background-architecture.png);
+   background-size:100vw 100%;
+   background-repeat: no-repeat;
+    align-items: center;
+    text-align: center;
+    padding: 3rem 0rem;
+    margin: 4rem 0rem;
+   
+
+    h1{
+        font-size: 4rem;
+        font-weight: 600;
+        color: $color-main;
+        padding: 1rem 0 ;
+    }
+
+    p{
+        padding: 1rem 0 3rem 0;
+        font-size: 2rem;
+        font-weight: 400;
+        color: $color-grey-light;
+    }
+button{
+    
+    width: 15rem;
+    height: 4rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: white;
+    background-color:rgba(3, 177, 177, 0.7529411765);
+    border: none;
+    box-shadow: 0 .3rem .3rem 0 #888;
+
+    &:hover{
+    background-color: $color-primary-hover;
+    color:$color-grey-dark;
+    }
+  
+}
+}
+@media (max-width: 650px){
+    .container{
+
+        
+    h1{
+        font-size: 5vw;
+        font-weight: 600;
+      
+    }
+
+    p{
+        padding: 1rem 0 3rem 0;
+        font-size: 3vw;
+        font-weight: 400;
+        color: $color-grey-light;
+    }
+    }
+}
+
+@media (max-width: 450px){
+    .container{
+        height: 35vh;
+        h1{
+            font-size: 5.5vw;
+           
+        }
+        p{
+            padding: 1rem 0 3rem 0;
+            font-size: 3.2vw;
+            font-weight: 400;
+            color: $color-grey-light;
+        } 
+    }
+}

@@ -1,0 +1,52 @@
+.futures{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 30vh;
+    padding:0 3rem;
+    border-radius:2rem;
+
+    &__asset{
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        width: 100%;
+         h1{
+            font-size: 4rem;
+            font-weight: 400;
+         }
+         span{
+            font-size: 2rem;
+            font-weight: 500;
+         }
+    }
+
+        &__icons{
+
+        display: flex;
+        align-items: center;
+        justify-content: end;
+        width: 100%;
+        height: 100%;
+        flex-direction: row;
+        gap: 5rem;
+
+        &__box{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+        a{
+            font-size: 1.5rem;
+            font-weight: 500;
+
+        }
+    }
+    &__tabs{
+        width: 100%;
+        height: 40vh;
+    }
+}

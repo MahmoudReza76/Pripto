@@ -1,0 +1,149 @@
+@import '../styles/base';
+.container{
+    position: relative;
+    height: 60vh;
+    width: 28vw;
+
+    &__card{
+        position: absolute;
+        width: 100%;
+        transform-style: preserve-3d;
+        transition: all .9s ease;
+        &:hover{
+             transform: rotateY(180deg);
+             transition: all 1.2s;
+         
+   }
+
+        &_front{
+            padding: 1.8rem;
+            position: absolute;
+            width: 100%;
+            height: 30vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 2rem;
+            backface-visibility: hidden;
+            background: rgb(0,0,0);
+            background: linear-gradient(148deg, rgba(0,0,0,1) 0%, rgba(0,255,248,1) 99%);
+            border-radius: 5rem;
+            text-align: center;
+            border:  1px solid $color-root;
+            color:white;
+            box-shadow:  0.4rem .8rem 0 #888;
+  
+        
+           
+            h1{
+                font-size: 1.8vw;
+                margin-bottom: 1rem;
+            }
+            p{
+                font-size: 1.2vw;
+                line-height: 1.2;
+                font-weight: 400;
+            }
+        }
+
+        &_back{
+            padding: 5rem 1rem;
+            position: absolute;
+            width: 100%;
+            height: 30vh;
+            backface-visibility: hidden;
+            background: rgb(0,230,244);
+            background: radial-gradient(circle, rgba(0,230,244,1) 0%, rgba(0,0,0,1) 97%, rgba(45,208,235,1) 100%);
+            transform: rotateY(180deg);
+            border-radius: 5rem;
+            text-align: center;
+            color: aliceblue;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-direction: column;
+            box-shadow:  0.4rem .8rem 0 #888;
+         
+        
+      
+
+            h1{
+                
+                font-size: 2rem;
+                margin-bottom: 1rem;
+            }
+            button{
+                background-color:$color-root;
+                border: none;
+                padding: 1.5rem 2.5rem;
+                border-radius: 2rem;
+                color:$color-grey-dark;
+                cursor: pointer;
+                font-size: 1.5rem;
+                font-weight: 500;
+                color: $color-grey-dark;
+                transition: all .5s;
+                &:hover{
+                    background-color:$color-primary-hover;
+                    color: white;
+                }
+                &:active{
+                    background-color:$color-primary-cean;
+                    color: $color-gray-brigh;
+                    transform: scale(0.95);
+                }
+              
+            }}}}
+
+        @media (max-width: 800px){
+      .container{
+        height: 35vh;
+        display: flex;
+        align-items: start;
+        justify-content: center;
+        h1{
+           font-size: 2.8vw;
+          }
+
+        &__card{
+            position: absolute;
+            width: 60vw;
+            transform-style: preserve-3d;
+            transition: all .9s ease;
+            &:hover{
+                 transform: rotateY(180deg);
+                 transition: all 1.2s;     
+       }
+       &_front{
+           p{
+               font-size: 2vw !important;
+            }
+        }
+                
+    }
+}
+ }
+
+ @media (max-width: 560px){
+    .container{
+        h1{
+            font-size: 3.7vw;
+           }
+    
+        &__card{
+             &_front{
+         p{
+            font-size: 2.7vw !important;
+         }
+     }
+     &_back{
+       button{
+        width: 30vw;
+        height: 6.5vh;
+        font-size: 3vw ;
+        text-align: center;
+       }
+     }
+ }}
+ }
