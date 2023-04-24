@@ -1,8 +1,8 @@
-##Pripto - Persian Crypto Exchange
+## Pripto - Persian Crypto Exchange
 
 ---
 
-####About The Project
+#### About The Project
 ![Pripto](./src/asset/Capture.PNG)
 
 The Pripto project is a cryptocurrency exchange project based on the react framework.
@@ -12,7 +12,7 @@ Rest assured the projet will exceed your expectations and improve through time w
 
 ---
 
-####Built With
+#### Built With
 In this section, we have listed the tools, frameworks and plugins used in the Pripto project
 
 - React
@@ -23,7 +23,7 @@ In this section, we have listed the tools, frameworks and plugins used in the Pr
 
 ---
 
-####Getting Started
+#### Getting Started
 Run the following command to use the project:
 
 - npm
