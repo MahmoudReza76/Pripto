@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/static/css/main.ddd05caf.css",
+    "main.js": "/static/js/main.840e9d48.js",
+    "static/media/Stock_Market_Background_Video_AFicYbv-mzg_248.gif": "/static/media/Stock_Market_Background_Video_AFicYbv-mzg_248.daa58aa1a28731411104.gif",
+    "static/media/bitcoindown03_generated.png": "/static/media/bitcoindown03_generated.70bdb85627b8536b5c96.png",
+    "static/media/Untitled design.png": "/static/media/Untitled design.ff38b8eecc21b4fe6221.png",
+    "static/media/design.png": "/static/media/design.145a293b76cd5e89e5d5.png",
+    "static/media/Untitled.png": "/static/media/Untitled.7893b95bae2cc51f990d.png",
+    "static/media/836-8365729_graph-background-architecture.png": "/static/media/836-8365729_graph-background-architecture.875626300670768baf2f.png",
+    "static/media/loadingexchange.gif": "/static/media/loadingexchange.d0aa719a6e13a5a19f6c.gif",
+    "static/media/tether.png": "/static/media/tether.c1d587669942a5e9bc47.png",
+    "static/media/lodingapi (1).gif": "/static/media/lodingapi (1).9c49619ec089cb0cdf40.gif",
+    "static/media/Bitcoin1.png": "/static/media/Bitcoin1.9a0e5bd4dd2ad72565b9.png",
+    "static/media/eth.png": "/static/media/eth.cbb70e5bd515b1dbb153.png",
+    "static/media/Pripto-sel_1_.png": "/static/media/Pripto-sel_1_.78dba3edf25d80210f2f.png",
+    "static/media/polkadot.svg": "/static/media/polkadot.c28b5c8af411cac9c3987b5acc5810b2.svg",
+    "index.html": "/index.html",
+    "static/media/xrp.svg": "/static/media/xrp.d02441ccb673230b60a426663c836c99.svg",
+    "main.ddd05caf.css.map": "/static/css/main.ddd05caf.css.map",
+    "main.840e9d48.js.map": "/static/js/main.840e9d48.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ddd05caf.css",
+    "static/js/main.840e9d48.js"
+  ]
+}

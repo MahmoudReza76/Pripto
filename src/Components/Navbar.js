@@ -19,20 +19,20 @@ const Navbar = () => {
   const menuRef = useRef();
   useEffect(() => {
     let handler = (e) => {
-      if (!menuRef.current.contains(e.target)) {
+      if (menuRef.current && !menuRef.current.contains(e.target)) {
         setModalOpen(false);
       }
     };
-    document.addEventListener("mousedown", handler);
 
+    document.addEventListener("mousedown", handler);
     return () => {
       document.removeEventListener("mousedown", handler);
     };
-  });
+  }, []);
+
   const toggleModal = () => {
     setModalOpen(!modalOpen);
   };
-
   async function logOutHandler() {
     setLoading(false);
     try {
